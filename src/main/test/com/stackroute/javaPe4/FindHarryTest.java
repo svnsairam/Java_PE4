@@ -1,14 +1,12 @@
-package com.company;
+package com.stackroute.javaPe4;
 
+import com.stackroute.javaPe4.FindHarry;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class FindHarryTest {
-
     FindHarry findHarry;
 
     @Before
@@ -25,7 +23,6 @@ public class FindHarryTest {
     public void findHarrySuccess() {
         String expectedValue = "Is Harry here ? true";
         String actualValue = findHarry.findHarryInGivenString("This is Harry i am harry he is harry");
-
         Assert.assertEquals(expectedValue, actualValue);
     }
 
@@ -33,7 +30,6 @@ public class FindHarryTest {
     public void findHarryFailure() {
         String expectedValue = "Is Harry here ? false";
         String actualValue = findHarry.findHarryInGivenString("This is henry");
-
         Assert.assertEquals(expectedValue, actualValue);
     }
 }

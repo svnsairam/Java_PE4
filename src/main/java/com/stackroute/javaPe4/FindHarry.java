@@ -1,12 +1,10 @@
-package com.company;
+package com.stackroute.javaPe4;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class FindHarry {
-
     public String findHarryInGivenString(String inputString) {
-
         if (inputString == null) {
             return "Null input is not expected";
         }

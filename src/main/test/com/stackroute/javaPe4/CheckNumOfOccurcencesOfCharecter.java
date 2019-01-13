@@ -1,4 +1,4 @@
-package com.company;
+package com.stackroute.javaPe4;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -8,7 +8,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CheckNumOfOccurcencesOfCharecter {
-
     NumOfOccurcencesOfCharecter numOfOccurcencesOfCharecter;
 
     @Before
@@ -55,5 +54,4 @@ public class CheckNumOfOccurcencesOfCharecter {
         int actualValue = numOfOccurcencesOfCharecter.findOccurenceOfCharecter("z", "");
         Assert.assertEquals(expectedValue, actualValue);
     }
-
 }

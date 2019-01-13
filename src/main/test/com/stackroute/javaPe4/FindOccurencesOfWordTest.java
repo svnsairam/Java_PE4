@@ -1,4 +1,4 @@
-package com.company;
+package com.stackroute.javaPe4;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -8,7 +8,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FindOccurencesOfWordTest {
-
     FindOccurencesOfWord findOccurencesOfWord;
 
     @Before
@@ -52,5 +51,4 @@ public class FindOccurencesOfWordTest {
 
         Assert.assertEquals(expectedValue, actualValue);
     }
-
 }

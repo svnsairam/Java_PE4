@@ -1,4 +1,4 @@
-package com.company;
+package com.stackroute.javaPe4;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -35,5 +35,4 @@ public class ReplaceCharectersTest {
 
         Assert.assertNotEquals(expectedValue, actualValue);
     }
-
 }
