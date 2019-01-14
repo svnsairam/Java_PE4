@@ -14,6 +14,7 @@ public class NumOfOccurcencesOfCharecter {
         if (replacementCharecter == null || inputString == null)
             return -1;
         int originalLength = inputString.length();
+        // Replace All the occurences of the character and difference the original and modified string lengths.
         String modifiedInputString = inputString.replaceAll(replacementCharecter, "");
         int modifiedLength = originalLength - modifiedInputString.length();
         return modifiedLength;

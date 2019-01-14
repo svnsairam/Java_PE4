@@ -10,6 +10,7 @@ public class TransposeString {
         if (inputString == null) {
             return "Null Input not expected";
         }
+        // split the strings using space " " and collect the strings into String array[] and reverse each string.
         String[] splitInputStirng = inputString.split(" ");
         String transposedString = new String();
         for (int i = 0; i < splitInputStirng.length; i++) {

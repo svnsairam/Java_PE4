@@ -15,6 +15,7 @@ public class FindOccurencesOfWord {
         if (findString.length() == 0) {
             return "finder Stirng should not be of zero size";
         }
+        // Use pattern matcher to find the occurences of the word.
         Pattern pattern = Pattern.compile(findString);
         Matcher matcher = pattern.matcher(inputString);
         String resultantString = new String();

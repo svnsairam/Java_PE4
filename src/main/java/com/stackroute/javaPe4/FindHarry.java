@@ -15,6 +15,7 @@ public class FindHarry {
         if (inputString == null) {
             return "Null input is not expected";
         }
+        // Search for the patter  HARRY if present then group the string
         inputString = inputString.toUpperCase();
         Pattern pattern1 = Pattern.compile("HARRY");
         Matcher matcher1 = pattern1.matcher(inputString);

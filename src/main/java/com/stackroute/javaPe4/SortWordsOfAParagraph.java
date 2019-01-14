@@ -16,12 +16,14 @@ public class SortWordsOfAParagraph {
             return "Null Input not expected";
         }
         String resultantStirng = new String();
+        // Use the pattern matcher to find the word strings and remove all others
         Pattern pattern = Pattern.compile("\\w+");
         Matcher matcher = pattern.matcher(inputParagraph.toLowerCase());
         ArrayList<String> arrayListOfWords = new ArrayList<>();
         while (matcher.find()) {
             arrayListOfWords.add(matcher.group());
         }
+        // Use the sort() function present in collections and sort the arrayList.
         Collections.sort(arrayListOfWords);
         for (int i = 0; i < arrayListOfWords.size(); i++) {
             resultantStirng = resultantStirng.concat(arrayListOfWords.get(i) + " ");
